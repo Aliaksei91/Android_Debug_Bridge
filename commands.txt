@@ -1,0 +1,13 @@
+adb devices - проверка подключения девайса
+adb -s 81629a939804 logcat чтение логов ctrl+C остановка чтения логов
+adb logcat | findstr com.android.todolist чтение логов приложения todolist
+adb logcat –c - очищаем буфер логов
+adb logcat | findstr com.android.todolist > C:\Users\User\log.txt - запись логов приложения и сохранение на ПК в тхт файле
+adb install с:/downloads/имя_файла.apk установка программ (-е переустановка с сохр. данных, -d установка более старую версию)
+adb uninstall  - удаление приложения
+adb logcat | findstr com.android.todolist - чтение логов
+adb shell screencap /sdcard/screen.png       adb pull /sdcard/screen.png  - сделать скрин и перенести на ПК
+adb shell screenrecord --size 1280x720 --bit-rate 6000000 --time-limit 10 --verbose /sdcard/video.mp4 - запись видео на телефоне                                            
+adb pull /sdcard/video.mp4 - перенос сделанного видео на ПК
+ipconfig - узнать айпи
+adb reboot - перезагрузка девайса
